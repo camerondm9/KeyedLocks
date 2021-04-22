@@ -3,23 +3,24 @@ Sync and async locking based on a key
 
 ## Usage
 This library provides the `KeyedLock<T>` type, which can be used like this:
-
-    var locks = new KeyedLock<string>();
-    using (locks.Lock("key"))
-    {
-        //Do the important thing
-    }
+```csharp
+var locks = new KeyedLock<string>();
+using (locks.Lock("key"))
+{
+    //Do the important thing
+}
+```
 
 The using block ensures that the lock will be released after.
 
 In `async` code, you can also wait to acquire the lock asynchronously:
-
-    var locks = new KeyedLock<string>();
-    using (await locks.LockAsync("key"))
-    {
-        //Do the important thing
-    }
-
+```csharp
+var locks = new KeyedLock<string>();
+using (await locks.LockAsync("key"))
+{
+    //Do the important thing
+}
+```
 ## Testing
 `KeyedLock<T>` is internally based on a `Dictionary<T, SemaphoreSlim>`.
 Semaphores are created and destroyed as needed.
