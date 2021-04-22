@@ -5,6 +5,26 @@
         <LangVersion>8</LangVersion>
         <Nullable>enable</Nullable>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <Authors>camerondm9</Authors>
+        <Company />
+        <Product />
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseFile></PackageLicenseFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright></Copyright>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/camerondm9/KeyedLocks</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/camerondm9/KeyedLocks.git</RepositoryUrl>
+        <Description>Sync and async locking based on a key</Description>
+        <PackageIcon>Icon.png</PackageIcon>
+        <PackageTags>Synchronization Locks</PackageTags>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\Icon.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
 
 </Project>
