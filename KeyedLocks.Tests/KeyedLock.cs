@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Semaphore = Microsoft.Coyote.Tasks.Semaphore;
+using SemaphoreSlim = Microsoft.Coyote.Tasks.Semaphore;
 
 namespace KeyedLocks
 {
@@ -56,6 +56,7 @@ namespace KeyedLocks
                     if (entry.Refs <= 0)
                     {
                         Locks.Remove(entry.Key);
+                        entry.Semaphore.Dispose();
                         return;
                     }
                 }
@@ -67,14 +68,14 @@ namespace KeyedLocks
         {
             public readonly KeyedLock<T> Lock;
             public readonly T Key;
-            internal readonly Semaphore Semaphore;
+            internal readonly SemaphoreSlim Semaphore;
             internal volatile int Refs;
 
             internal Entry(KeyedLock<T> keyedLock, T key, int maxCount)
             {
                 Lock = keyedLock;
                 Key = key;
-                Semaphore = Semaphore.Create(maxCount, maxCount);
+                Semaphore = SemaphoreSlim.Create(maxCount, maxCount);
                 Refs = 0;
             }
 
