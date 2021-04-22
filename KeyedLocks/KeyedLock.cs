@@ -12,9 +12,7 @@ namespace KeyedLocks
         internal readonly Dictionary<T, Entry> Locks;
         private readonly int MaxCount;
 
-        public KeyedLock() : this(null, 1) { }
-        public KeyedLock(IEqualityComparer<T>? comparer) : this(comparer, 1) { }
-        public KeyedLock(IEqualityComparer<T>? comparer, int maxCount)
+        public KeyedLock(IEqualityComparer<T>? comparer = null, int maxCount = 1)
         {
             Locks = new Dictionary<T, Entry>(comparer);
             MaxCount = maxCount;
