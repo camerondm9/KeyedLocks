@@ -1,0 +1,36 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyedLocks", "KeyedLocks\KeyedLocks.csproj", "{60DDD3EB-4B3E-4946-B17C-65B4724E0ED2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyedLocks.Tests", "KeyedLocks.Tests\KeyedLocks.Tests.csproj", "{AAAF8CF2-F39E-46E1-8A7D-9AA4C2D0E0B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AD36A4D-284C-40E5-A56D-9D465476E62B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60DDD3EB-4B3E-4946-B17C-65B4724E0ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DDD3EB-4B3E-4946-B17C-65B4724E0ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DDD3EB-4B3E-4946-B17C-65B4724E0ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DDD3EB-4B3E-4946-B17C-65B4724E0ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAAF8CF2-F39E-46E1-8A7D-9AA4C2D0E0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAF8CF2-F39E-46E1-8A7D-9AA4C2D0E0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAF8CF2-F39E-46E1-8A7D-9AA4C2D0E0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAF8CF2-F39E-46E1-8A7D-9AA4C2D0E0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {701536AC-BCEA-4823-B329-5CAA8B2E3C17}
+	EndGlobalSection
+EndGlobal

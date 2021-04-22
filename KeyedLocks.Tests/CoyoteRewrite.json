@@ -1,0 +1,9 @@
+{
+    "AssembliesPath": ".",
+    "Assemblies": [
+        "KeyedLocks.Tests.dll",
+        "KeyedLocks.dll"
+    ],
+    "IsDataRaceCheckingEnabled": true,
+    "IsRewritingUnitTests": true
+}
