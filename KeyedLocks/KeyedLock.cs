@@ -55,6 +55,7 @@ namespace KeyedLocks
                     if (entry.Refs <= 0)
                     {
                         Locks.Remove(entry.Key);
+                        entry.Semaphore.Dispose();
                         return;
                     }
                 }
